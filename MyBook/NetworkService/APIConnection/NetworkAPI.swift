@@ -16,10 +16,11 @@ class NetworkAPI: BaseAPI<NetworkRequest>, NetworkAPIProtocol {
     
     func getBooks(completion: @escaping(Swift.Result<BookList?, NSError>) -> Void)
    {
-       self.getBooks { (result) in
+       self.fetchData(target: .getBooks, responseClass: BookList.self) { (result) in
            completion(result)
            //just for trial then dont forget to remove it
            print("result from network layer \(result)")
        }
+
     }
 }

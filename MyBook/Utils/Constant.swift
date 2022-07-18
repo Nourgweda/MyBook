@@ -8,6 +8,9 @@
 import Foundation
 struct Constants {
 
+   static  let baseURL = "https://api.nytimes.com/svc/books/v3/"
+   static  let APIkey = "GW56UeEjovaf36eaX2GvqHGbGZZGcaPT"
+   static  let listKey = "hardcover-fiction"
     
     
 }

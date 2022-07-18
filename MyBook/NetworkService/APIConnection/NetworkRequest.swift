@@ -17,7 +17,8 @@ enum NetworkRequest{
 extension NetworkRequest : TargetType {
     var baseURL: String {
         switch self {
-        default : return "https://api.nytimes.com/svc/books/v3/lists.json?api-key=GW56UeEjovaf36eaX2GvqHGbGZZGcaPT&list=hardcover-fiction"
+        default :
+            return Constants.baseURL
         }
     }
     
@@ -25,8 +26,7 @@ extension NetworkRequest : TargetType {
         switch self {
             
         case .getBooks:
-            return ""
-
+            return "lists.json"
         }
     }
     
@@ -43,8 +43,7 @@ extension NetworkRequest : TargetType {
         switch self {
             
         case .getBooks:
-            return .requestPlain
-
+            return .requestParameters(parameters: ["api-key" : Constants.APIkey,"list":Constants.listKey], encoding: URLEncoding.default)
         }
     }
     
@@ -52,7 +51,7 @@ extension NetworkRequest : TargetType {
         switch self {
         default:
             return [
-                "":""
+                "n":"nour"
             ]
         }
     }
