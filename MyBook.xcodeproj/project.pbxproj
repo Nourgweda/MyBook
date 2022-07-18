@@ -21,6 +21,10 @@
 		C7EA1B3E288585ED009BD983 /* MyBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B3D288585ED009BD983 /* MyBookUITestsLaunchTests.swift */; };
 		C7EA1B4C288587AA009BD983 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B4B288587AA009BD983 /* Constant.swift */; };
 		C7EA1B4F28858801009BD983 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B4E28858801009BD983 /* BookList.swift */; };
+		C7EA1B54288589CE009BD983 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B53288589CE009BD983 /* NetworkAPI.swift */; };
+		C7EA1B56288589FA009BD983 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B55288589FA009BD983 /* NetworkRequest.swift */; };
+		C7EA1B5828858A29009BD983 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B5728858A29009BD983 /* BaseAPI.swift */; };
+		C7EA1B5A28858A54009BD983 /* TargetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B5928858A54009BD983 /* TargetAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		C7EA1B3D288585ED009BD983 /* MyBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7EA1B4B288587AA009BD983 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C7EA1B4E28858801009BD983 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		C7EA1B53288589CE009BD983 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		C7EA1B55288589FA009BD983 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		C7EA1B5728858A29009BD983 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		C7EA1B5928858A54009BD983 /* TargetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetAPI.swift; sourceTree = "<group>"; };
 		F6E91347E62BA5C301020053 /* Pods-MyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBook.debug.xcconfig"; path = "Target Support Files/Pods-MyBook/Pods-MyBook.debug.xcconfig"; sourceTree = "<group>"; };
 		F709FD75B6B4F8A20709303F /* Pods-MyBook-MyBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBook-MyBookUITests.release.xcconfig"; path = "Target Support Files/Pods-MyBook-MyBookUITests/Pods-MyBook-MyBookUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +137,7 @@
 		C7EA1B1A288585EB009BD983 /* MyBook */ = {
 			isa = PBXGroup;
 			children = (
+				C7EA1B5028858981009BD983 /* NetworkService */,
 				C7EA1B4D288587F5009BD983 /* Model */,
 				C7EA1B4A2885879B009BD983 /* Utils */,
 				C7EA1B1B288585EB009BD983 /* MyBookApp.swift */,
@@ -180,6 +189,33 @@
 				C7EA1B4E28858801009BD983 /* BookList.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C7EA1B5028858981009BD983 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA1B522885899F009BD983 /* BaseAPI */,
+				C7EA1B5128858995009BD983 /* APIConnection */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		C7EA1B5128858995009BD983 /* APIConnection */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA1B53288589CE009BD983 /* NetworkAPI.swift */,
+				C7EA1B55288589FA009BD983 /* NetworkRequest.swift */,
+			);
+			path = APIConnection;
+			sourceTree = "<group>";
+		};
+		C7EA1B522885899F009BD983 /* BaseAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA1B5728858A29009BD983 /* BaseAPI.swift */,
+				C7EA1B5928858A54009BD983 /* TargetAPI.swift */,
+			);
+			path = BaseAPI;
 			sourceTree = "<group>";
 		};
 		E78989C0521A39E1B2654F42 /* Pods */ = {
@@ -435,10 +471,14 @@
 			files = (
 				C7EA1B4F28858801009BD983 /* BookList.swift in Sources */,
 				C7EA1B28288585ED009BD983 /* MyBook.xcdatamodeld in Sources */,
+				C7EA1B56288589FA009BD983 /* NetworkRequest.swift in Sources */,
+				C7EA1B5828858A29009BD983 /* BaseAPI.swift in Sources */,
 				C7EA1B25288585ED009BD983 /* Persistence.swift in Sources */,
+				C7EA1B54288589CE009BD983 /* NetworkAPI.swift in Sources */,
 				C7EA1B4C288587AA009BD983 /* Constant.swift in Sources */,
 				C7EA1B1E288585EB009BD983 /* ContentView.swift in Sources */,
 				C7EA1B1C288585EB009BD983 /* MyBookApp.swift in Sources */,
+				C7EA1B5A28858A54009BD983 /* TargetAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
