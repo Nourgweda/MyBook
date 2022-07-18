@@ -19,6 +19,7 @@
 		C7EA1B32288585ED009BD983 /* MyBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B31288585ED009BD983 /* MyBookTests.swift */; };
 		C7EA1B3C288585ED009BD983 /* MyBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B3B288585ED009BD983 /* MyBookUITests.swift */; };
 		C7EA1B3E288585ED009BD983 /* MyBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B3D288585ED009BD983 /* MyBookUITestsLaunchTests.swift */; };
+		C7EA1B4C288587AA009BD983 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA1B4B288587AA009BD983 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C7EA1B37288585ED009BD983 /* MyBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EA1B3B288585ED009BD983 /* MyBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookUITests.swift; sourceTree = "<group>"; };
 		C7EA1B3D288585ED009BD983 /* MyBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7EA1B4B288587AA009BD983 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F6E91347E62BA5C301020053 /* Pods-MyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBook.debug.xcconfig"; path = "Target Support Files/Pods-MyBook/Pods-MyBook.debug.xcconfig"; sourceTree = "<group>"; };
 		F709FD75B6B4F8A20709303F /* Pods-MyBook-MyBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBook-MyBookUITests.release.xcconfig"; path = "Target Support Files/Pods-MyBook-MyBookUITests/Pods-MyBook-MyBookUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 		C7EA1B1A288585EB009BD983 /* MyBook */ = {
 			isa = PBXGroup;
 			children = (
+				C7EA1B4A2885879B009BD983 /* Utils */,
 				C7EA1B1B288585EB009BD983 /* MyBookApp.swift */,
 				C7EA1B1D288585EB009BD983 /* ContentView.swift */,
 				C7EA1B1F288585ED009BD983 /* Assets.xcassets */,
@@ -160,6 +163,14 @@
 			path = MyBookUITests;
 			sourceTree = "<group>";
 		};
+		C7EA1B4A2885879B009BD983 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA1B4B288587AA009BD983 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E78989C0521A39E1B2654F42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +181,6 @@
 				6D06A952B00EDF3946B96CC3 /* Pods-MyBookTests.debug.xcconfig */,
 				9B9DDCAF5EF4910D3A90EFFA /* Pods-MyBookTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -414,6 +424,7 @@
 			files = (
 				C7EA1B28288585ED009BD983 /* MyBook.xcdatamodeld in Sources */,
 				C7EA1B25288585ED009BD983 /* Persistence.swift in Sources */,
+				C7EA1B4C288587AA009BD983 /* Constant.swift in Sources */,
 				C7EA1B1E288585EB009BD983 /* ContentView.swift in Sources */,
 				C7EA1B1C288585EB009BD983 /* MyBookApp.swift in Sources */,
 			);
