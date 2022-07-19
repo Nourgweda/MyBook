@@ -15,7 +15,19 @@ struct BookList : Codable {
     var results : [Result]
 }
 
-struct Result  : Codable  {
+struct Result  : Codable  , Hashable{
+    
+    
+    static func == (lhs: Result, rhs: Result) -> Bool {
+        return lhs.dagger == rhs.dagger && lhs.dagger == rhs.dagger
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(dagger)
+        hasher.combine(dagger)
+    }
+
+    
     var list_name : String
     var display_name : String
     var bestsellers_date : String
@@ -33,7 +45,19 @@ struct Result  : Codable  {
     
 }
 
-struct BookDetail : Codable  {
+struct BookDetail : Codable , Hashable {
+    
+    static func == (lhs: BookDetail, rhs: BookDetail) -> Bool {
+        return lhs.primary_isbn10 == rhs.primary_isbn10 && lhs.primary_isbn10 == rhs.primary_isbn10
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(primary_isbn10)
+        hasher.combine(primary_isbn10)
+    }
+    
+    
+    
     var title: String
     var description: String
     var contributor: String

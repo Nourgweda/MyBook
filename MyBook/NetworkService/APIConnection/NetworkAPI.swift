@@ -19,7 +19,7 @@ class NetworkAPI: BaseAPI<NetworkRequest>, NetworkAPIProtocol {
        self.fetchData(target: .getBooks, responseClass: BookList.self) { (result) in
            completion(result)
            //just for trial then dont forget to remove it
-           print("result from network layer \(result)")
+           //print("result from network layer \(result)")
        }
 
     }
